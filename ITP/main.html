@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <title>ITP</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(15, 6, 6);
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        }
+
+        .nav li{
+            float: left;
+            list-style: none;
+            margin: 0px 10px;
+        }
+        .nav li.navcenter{
+            float: none;
+            display: inline-block;
+        }
+        .nav li.navright {
+            float: right;
+        }
+        .nav li  a{
+            display: block;
+            color: #9aae14;
+            text-align: center;
+            padding: 24px 26px;
+            text-decoration: none;
+        }
+        .nav li a:hover{
+            background-color: rgb(13, 69, 5);
+        }
+        .bg-image {
+            background-image: url("cp.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+    
+        
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            position: relative;
+            width: 19%;
+            padding-bottom: 25%;
+            margin: 2%;
+            overflow: hidden;
+        }
+
+        .card img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        .card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        .card-overlay p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        p{
+            font-size: 30px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .travel{
+            background-color: #fff;
+            
+        }
+
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 3px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        footer{
+            left: 0;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            background-color: rgb(152, 150, 171);
+            color: white;
+            text-align: center;
+        }
+        footer i{
+            font-size: 30px;
+            display:block;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="https://www.edx.org/search?q=AI"><i class="fa-solid fa-bullhorn"></i></a></li>
+        <li class="navcenter"><a href="https://github.com/berrakaraman" target="_blank">MAKALALER</a></li>
+        <li class="navcenter"><a href="WhatsApp Image 2023-05-17 at 15.51.50.jpeg" target="_blank">BERRA KARAMAN</a></li>
+        <li class="navcenter"><a href="BERRA KARAMAN (1).pdf" target="_blank">CV</a></li>
+        <li class="navright"><a href="https://www.doviz.com/pariteler/eur-usd"><i class="fa-solid fa-money-bill-transfer"></i></a></li>
+
+    </ul>
+    <div class="bg-image"></div>
+
+
+    <div class="travel">
+        <div><p>TRAVEL</p></div>
+    
+
+        <div class="card-container">
+            <div class="card">
+                <img src="istanbul.jpg" alt="İSTANBUL">
+                <div class="card-overlay"> 
+                    <p>İSTANBUL</p></div>
+            </div>
+            <div class="card">
+                <img src="eskişehir.jpg" alt="">
+                <div class="card-overlay">
+                    <p>ESKİŞEHİR</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="ankaraaa.jpg" alt="">
+                <div class="card-overlay"> 
+                    <p>ANKARA</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="bursss.jpg" alt="">
+                <div class="card-overlay">
+                    <p>BURSA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <p>İLETİŞİM</p>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">TÜRKİYE</option>
+      <option value="canada">OTHERS</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+    <footer>
+        <a href="https://www.instagram.com/berrakaramaan/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/Berrkaa"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/berrakaraman"><i class="fa-brands fa-github"></i></a>
+
+    </footer>
+
+</body>
+</html>
